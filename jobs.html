@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> AllJobs</title>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  *
+{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-image: url("https://c0.wallpaperflare.com/preview/117/583/596/business-meetings-presentation-professional.jpg");
+	background-repeat: no-repeat ;
+	background-size: 100%;
+}
+.menu-bar
+{
+	background-image: linear-gradient(to right,#6db9ef,#7ce08a);
+}
+.nav-link a:hover{
+
+
+
+	font-size: 16px;
+	color: #ffffff !important;
+	margin: 2px;
+	overflow: hidden;
+	
+
+
+}
+.navbar-nav
+{
+	text-align:  right;
+}
+.menu-bar .navbar-toggler{
+	padding-right: 0;
+	outline: none;
+	border: none;
+
+}
+.banner h1{
+color: 	 #F97BCC;
+padding-top: 170px;
+font-size: 50px;
+letter-spacing: 6px;
+font-weight: 600;
+text-shadow: 0 0 30px rgba(0,0,0,1.5);
+text-shadow: -1px 1px 0 #fff,
+                           1px 1px 0 #fff,
+                           1px -1px 0 #fff,
+                          -1px -1px 0 #fff;
+
+}
+.banner p{
+	color: #E864BA;
+	font-size: 20px;
+
+}
+.search-job{
+	padding: 30px 0;
+	margin: -50px 6% 50px;
+	
+}
+.search-job .form-control{
+	max-width: 250px;
+	display: inline-flex;
+	margin: 10px 5px;
+	 border-radius: 0;
+	box-shadow: none  !important;
+	border-style: solid ;
+	border-color: black;
+
+}
+.search-job .btn-primary
+{
+	border-radius: 0;
+	box-shadow: none !important;
+	border: none;
+	display: inline-flex;
+	margin: 5px;
+	padding: 1px 10px;
+}
+#recruiters
+{
+	padding-top: 50px;
+	padding-bottom: 100px;
+
+}
+#recruiters h3
+{
+	text-align: center;
+	padding-bottom: 40px;
+	color: #ff0066;
+}
+h3::before
+{
+	content: '';
+	background-image:linear-gradient(to right,#6db9ef,#7ce08a); 
+	width: 50px;
+	height: 30px;
+	position: absolute;
+	z-index: -10;
+	margin-top: -15px;
+	border-top-left-radius: 70px;
+	border-bottom-right-radius: 90px;
+}
+#recruiters img
+{
+	max-width: 100px;
+	margin: 10px 20px;
+}
+#jobs
+{
+	background: #f8f8fa;
+	padding: 50px 0;
+}
+#app-banner{
+	background-color: whitesmoke;
+	padding: 50px 0;
+
+}
+#app-banner h1{
+	margin-top: 20px;
+	color: #fff;
+}
+ #app-banner img{
+ 	width: 150px;
+ 	margin: 50px 0;
+ 	overflow: hidden;
+ 	cursor: pointer;
+ 	position: relative;
+ }
+ #footer a img {
+ 	 
+ 	max-width: 100px;
+	margin: 10px 20px;
+ 	}
+ 	
+#joblink{
+	text-decoration: none;
+}
+.cv h3{
+   text-align:center;
+   color:#F3089A;
+}
+
+  </style>
+</head> 
+<section id="header">
+<div class="menu-bar">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="jobs.html">ALL JOBS </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="regi.html">SIGN-IN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="logi.html">LOGIN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="apply.html">APPLY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="reach.html">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+ <marquee behaviour="alternate"height="45" bgcolor="gradient">
+<font size="5"><i><b>"Find out what you like doing best and get someone to pay you for doing it !" </i></b></font>
+</marquee>
+</section>
+
+
+<body bgcolor="sky blue">
+</section>
+<section id="jobs">
+  <div class="container">
+    <marquee behaviour="alternate"height="35" bgcolor="#b6fbfc">
+<font size="5"><i><b> RECENT UPDATE </i></b></font>
+</marquee>
+    <div class="company-details">
+    <div class="job-update">
+      <h4><b><h3> Seasoned Senior Python Developer (Fresher)</h3></b></h4>
+      <p> <strong>XYZ Solution pvt Ltd</strong> </p>
+      <ul>
+     <li><span>0-1 yrs</span><br></li>
+     <li> <span>3.50-4.00 Lacs p.a. </span><br></li>
+     <li> <span>Bangalore</span><br></li></ul>
+     <p><h5><strong> Skills</strong></h5></p> <small>python,</small><small>Knowledge on django,</small><small>Html css </small> <small> and javaScript</small></p>
+      <p>Description </p>  <ul> <li>Good communication skills.</li>
+<li>Critical thinking.</li>
+<li>Working well in a team.</li>
+<li>Self-motivation.</li>
+<li>Being flexible. <a href="more.html">Readmore</li></p>
+</div>
+<div class="apply-btn">
+ <a href="regi.html"> <input type="button" class="btn btn-primary" value="Apply" ></a>
+ 
+</div>
+</div>
+</a></li></ul></div></div></div></section>
+
+
+<section id="jobs">
+  <div class="container">
+
+    <div class="company-details">
+    <div class="job-update">
+      <h4><b> Seasoned Senior Java Developer (Fresher)</b></h4>
+      <p> <strong>DEL Solution pvt Ltd</strong> </p>
+      <ul>
+     <li><span>0-1 yrs</span><br></li>
+     <li> <span>3.30-4.00 Lacs p.a. </span><br></li>
+     <li> <span>Bangalore</span><br></li></ul>
+     <p><h5><strong> Skills</strong></h5></p> <small>Java,</small><small>Knowledge on spring,</small><small>Html css </small> <small> and javaScript</small></p>
+      <p>Description </p>  <ul> <li>Good communication skills.</li>
+<li>Critical thinking.</li>
+<li>Working well in a team.</li>
+<li>Self-motivation.</li>
+<li>Being flexible. <a href="more.html">Readmore</li></p>
+</div>
+<div class="apply-btn">
+  <a href="regi.html"> <input type="button" class="btn btn-primary" value="Apply" ></a>
+</div>
+</div>
+</a></li></ul></div></div></div></section>
+
+
+<section id="jobs">
+  <div class="container">
+    
+    <div class="company-details">
+    <div class="job-update">
+      <h4><b> Seasoned junior .net Developer (Fresher)</b></h4>
+      <p> <strong> Capgemini Systems pvt Ltd</strong> </p>
+      <ul>
+     <li><span>0-1 yrs</span><br></li>
+     <li> <span>3.50-4.00 Lacs p.a. </span><br></li>
+     <li> <span>Bangalore</span><br></li></ul>
+     <p><h5><strong> Skills</strong></h5></p> <small>.net,</small><small>Knowledge on c#,</small><small>Html css </small> <small> and javaScript</small></p>
+      <p>Description </p>  <ul> <li>Good communication skills.</li>
+<li>Critical thinking.</li>
+<li>Working well in a team.</li>
+<li>Self-motivation.</li>
+<li>Being flexible. <a href="more.html">Readmore</li></p>
+</div>
+<div class="apply-btn">
+  <a href="regi.html"> <input type="button" class="btn btn-primary" value="Apply" ></a>
+  </div>
+</div>
+</a></li></ul></div></div></div></section>
+
+
+<section id="jobs">
+  <div class="container">
+    
+    <div class="company-details">
+    <div class="job-update">
+      <h4><b> Seasoned React native Developer (Fresher)</b></h4>
+      <p> <strong>TCS Solution pvt Ltd</strong> </p>
+      <ul>
+     <li><span>0-1 yrs</span><br></li>
+     <li> <span>3.50-4.00 Lacs p.a. </span><br></li>
+     <li> <span>Bangalore</span><br></li></ul>
+     <p><h5><strong> Skills</strong></h5></p> <small>python,</small><small>Knowledge on Bootsrap,</small><small>Html css </small> <small> and javaScript</small></p>
+      <p>Description </p>  <ul> <li>Good communication skills.</li>
+<li>Critical thinking.</li>
+<li>Working well in a team.</li>
+<li>Self-motivation.</li>
+<li>Being flexible. <a href="more.html">Readmore</li></p>
+</div>
+<div class="apply-btn">
+  <a href="regi.html"> <input type="button" class="btn btn-primary" value="Apply" ></a>
+</div>
+</div>
+</a></li></ul></div></div></div></section>
+
+
+<section id="jobs">
+  <div class="container">
+    
+    <div class="company-details">
+    <div class="job-update">
+      <h4><b> Seasoned angular Developer (Fresher)</b></h4>
+      <p> <strong> microsoft india pvt Ltd</strong> </p>
+      <ul>
+     <li><span>0-1 yrs</span><br></li>
+     <li> <span>3.50-4.00 Lacs p.a. </span><br></li>
+     <li> <span>Bangalore</span><br></li></ul>
+     <p><h5><strong> Skills</strong></h5></p> <small>angular,</small><small>Knowledge on bootsrap,</small><small>Html css </small> <small> and javaScript</small></p>
+      <p>Description </p>  <ul> <li>Good communication skills.</li>
+<li>Critical thinking.</li>
+<li>Working well in a team.</li>
+<li>Self-motivation.</li>
+<li>Being flexible. <a href="more.html">Readmore</li></p>
+</div>
+<div class="apply-btn">
+  <a href="regi.html"> <input type="button" class="btn btn-primary" value="Apply" ></a>
+</div>
+</div>
+</a></li></ul></div></div></div></section>
+
+
+<section id="jobs" >
+  <div class="container">
+    
+    <div class="company-details">
+    <div class="job-update">
+      <h4><b> Seasoned ASP.net Developer (Fresher)</b></h4>
+      <p> <strong>Tech mahindra Solution pvt Ltd</strong> </p>
+      <ul>
+     <li><span>0-1 yrs</span><br></li>
+     <li> <span>3.50-4.00 Lacs p.a. </span><br></li>
+     <li> <span>Bangalore</span><br></li></ul>
+     <p><h5><strong> Skills</strong></h5></p> <small>C#,</small><small>Knowledge on SQL,</small><small>Html css </small> <small> and javaScript</small></p>
+      <p>Description </p>  <ul> <li>Good communication skills.</li>
+<li>Critical thinking.</li>
+<li>Working well in a team.</li>
+<li>Self-motivation.</li>
+<li>Being flexible. <a href="more.html">Readmore</li></p>
+</div>
+<div class="apply-btn">
+  <a href="regi.html"> <input type="button" class="btn btn-primary" value="Apply" ></a>
+</div>
+</div>
+</a></li></ul></div></div></div></section>
+
+
+<section id="jobs">
+  <div class="container">
+    
+    <div class="company-details">
+    <div class="job-update">
+      <h4><b> Seasoned react.js Developer (Fresher)</b></h4>
+      <p> <strong>google Solution pvt Ltd</strong> </p>
+      <ul>
+     <li><span>0-1 yrs</span><br></li>
+     <li> <span>3.50-4.00 Lacs p.a. </span><br></li>
+     <li> <span>Bangalore</span><br></li></ul>
+     <p><h5><strong> Skills</strong></h5></p> <small>react,</small><small>Knowledge on bootsrap,</small><small>Html css </small> <small> and javaScript</small></p>
+      <p>Description </p>  <ul> <li>Good communication skills.</li>
+<li>Critical thinking.</li>
+<li>Working well in a team.</li>
+<li>Self-motivation.</li>
+<li>Being flexible. <a href="more.html">Readmore</li></p>
+</div>
+<div class="apply-btn">
+  <a href="regi.html"> <input type="button" class="btn btn-primary" value="Apply" ></a> 
+  <br> <br>
+  <div class="cv">
+  <h3>Upload Your Resume Here </h3><br>
+  <input type="file" placeholder="Search..." value= "file" class="cvbtn" style="margin-left:325px; "> Choose File
+  </div>
+</div>
+</div>
+
+</a></li></ul></div></div>
+
+</div></section>
+</div>
+</body>
+</html>

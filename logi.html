@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Insert title here</title>
+<style>
+form {
+  border: 3px solid #f1f1f1;
+}
+.menu-bar
+{
+	background-image: linear-gradient(to right,#6db9ef,#7ce08a);
+}
+.nav-link a:hover{
+
+
+
+	font-size: 16px;
+	color: #ffffff !important;
+	margin: 2px;
+	overflow: hidden;
+	
+
+
+}
+.navbar-nav
+{
+	text-align:  right;
+	display: inline;
+	padding-left: 50px;
+	height: 160px;
+	
+}
+.menu-bar .navbar-toggler{
+	padding-right: 0;
+	outline: none;
+	border: none;
+
+}
+.collapse navbar-collapse{
+	height: 60px;
+}
+#navbarNav{
+	height: 35px;
+	padding-top: 20px;
+
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 10%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+</style>
+<script type="text/javascript">
+     function validate(){
+var uname=document.getElementById("uname");
+var psw=document.getElementById("psw");
+
+if(uname.value.trim()=="" || psw.value.trim()=="")
+
+{
+window.alert("please fill the form !");
+return false;
+}
+else
+{
+window.alert("Successfully updated !");
+}
+}
+   </script>
+
+</head>
+<body>
+ <section id="header">
+<div class="menu-bar">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto" id="abc "  >
+        <li class="nav-item" style="display: inline-block; ">
+          <a class="nav-link" href="jobs.html">ALL JOBS </a>
+        </li>
+        <li class="nav-item" style="display: inline-block; ">
+          <a class="nav-link" href="regi.html">SIGN-IN</a>
+        </li>
+        <li class="nav-item" style="display: inline-block; ">
+          <a class="nav-link" href="logi.html">LOGIN</a>
+        </li>
+        <li class="nav-item" style="display: inline-block; ">
+
+          <a class="nav-link " href="apply.html">APPLY</a>
+        </li>
+        <li class="nav-item" style="display: inline-block; ">
+          <a class="nav-link " href="reach.html">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<marquee behaviour="alternate"height="35" bgcolor="gradient">
+<font size="5"><i><b>"Find out what you like doing best and get someone to pay you for doing it !" </i></b></font>
+</marquee>
+</section>
+<form onsubmit="return validate()" action="logi.jsp" method="post">
+  <div class="imgcontainer">
+    <img src="https://www.iconbunny.com/icons/media/catalog/product/6/2/620.12-login-icon-iconbunny.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname"  id="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw"  id="psw"required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="regi.html">password?</a></span>
+  </div>
+</form>
+</body>
+</html>

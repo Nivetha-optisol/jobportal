@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+h3{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:#3399ff;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri; 
+  color:black; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+   
+  background-color: #20f770; 
+  border-collapse: collapse; 
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}
+form {
+  border: 3px solid #f1f1f1;
+}
+.menu-bar
+{
+	background-image: linear-gradient(to right,#6db9ef,#7ce08a);
+}
+.nav-link a:hover{
+
+
+
+	font-size: 16px;
+	color: #ffffff !important;
+	margin: 2px;
+	overflow: hidden;
+	
+
+
+}
+.navbar-nav
+{
+	text-align:  right;
+	display: inline;
+	padding-left: 50px;
+	height: 160px;
+	
+}
+.menu-bar .navbar-toggler{
+	padding-right: 0;
+	outline: none;
+	border: none;
+
+}
+.collapse navbar-collapse{
+	height: 60px;
+}
+#navbarNav{
+	height: 35px;
+	padding-top: 20px;
+
+}
+
+</style>
+<script type="text/javascript">
+     function validate(){
+var first=document.getElementById("first");
+var date=document.getElementById("date");
+
+if(first.value.trim()=="" || date.value.trim()=="")
+
+{
+window.alert("please fill the form !");
+return false;
+}
+else
+{
+window.alert("Successfully updated !");
+}
+}
+   </script>
+</head>
+<body>
+<section id="header">
+<div class="menu-bar">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto" id="abc "  >
+        <li class="nav-item" style="display: inline-block; ">
+          <a class="nav-link" href="jobs.html">ALL JOBS </a>
+        </li>
+        <li class="nav-item" style="display: inline-block; ">
+          <a class="nav-link" href="regi.html">SIGN-IN</a>
+        </li>
+        <li class="nav-item" style="display: inline-block; ">
+          <a class="nav-link" href="logi.html">LOGIN</a>
+        </li>
+        <li class="nav-item" style="display: inline-block; ">
+
+          <a class="nav-link " href="apply.html">APPLY</a>
+        </li>
+        <li class="nav-item" style="display: inline-block; ">
+          <a class="nav-link " href="reach.html">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<marquee behaviour="alternate"height="35" bgcolor="gradient">
+<font size="5"><i><b>"Find out what you like doing best and get someone to pay you for doing it !" </i></b></font>
+</marquee>
+</section>
+<form onsubmit="return validate()" action=apply.jsp>
+
+ 
+<table align="center" cellpadding = "10" class="tab">
+ 
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td for="first"> NAME </td>
+<td><input type="text" name="first" id="first" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+<tr>
+<td for="date">DOB </td>
+<td><input type="date" name="date" id="date" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+<tr>
+<td for="maill">EMAIL ID</td>
+<td><input type="email" name="maill" maxlength="100" required="" /></td>
+</tr>
+ <tr>
+<td for="mob">MOBILE NUMBER</td>
+<td>
+<input type="text" name="mob" maxlength="10" />
+(10 digit number)
+</td>
+</tr>
+<tr>
+<td for="gen">GENDER</td>
+<td>
+Male <input type="radio" name="gen" value="Male" />
+Female <input type="radio" name="gen" value="Female" />
+</td>
+</tr>
+<tr>
+<td for="ad">ADDRESS <br /><br /><br /></td>
+<td><textarea name="ad" rows="4" cols="30"></textarea></td>
+</tr>
+<!----- City ---------------------------------------------------------->
+<tr>
+<td for="ci">CITY</td>
+<td><input type="text" name="ci" maxlength="30" />
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<!----- Pin Code ---------------------------------------------------------->
+<tr>
+<td for="pin">PIN CODE</td>
+<td><input type="text" name="pin" maxlength="6" />
+(6 digit number)
+</td>
+</tr>
+ 
+<!----- State ---------------------------------------------------------->
+<tr>
+<td for="state">STATE</td>
+<td><input type="text" name="state" maxlength="30" />
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<!----- Country ---------------------------------------------------------->
+<tr>
+<td for="country">COUNTRY</td>
+<td><input type="text" name="country" value="India" readonly="readonly" /></td>
+</tr>
+<!----- Hobbies ---------------------------------------------------------->
+ 
+<tr>
+<td for="skill">SKILLS <br /><br /><br /></td>
+ 
+<td>
+PYTHON
+<input type="checkbox" name="skill" value="python" />
+JAVA
+<input type="checkbox" name="skill" value="java" />
+C
+<input type="checkbox" name="skill" value="c" />
+RUBY
+<input type="checkbox" name="skill" value="ruby" />
+<br />
+Others
+<input type="checkbox" name="skill" value="Other">
+<input type="text" name="skill" maxlength="30" />
+</td>
+</tr>
+ 
+<!----- Qualification---------------------------------------------------------->
+
+
+<tr>
+<td for="qual"> QUALIFICATION </td>
+<td><input type="text" name="qual" maxlength="30"/>
+(max 50 characters a-z and A-Z)
+</td>
+</tr>
+
+
+
+</table>
+<input type="submit" value="Submit">
+
+ 
+
+
+</form>
+
+</body>
+</html>
